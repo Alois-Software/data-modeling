@@ -1,11 +1,12 @@
 from FacebookPostsScraper import FacebookPostsScraper as Fps
 from pprint import pprint as pp
+import login
 
 
 def main():
     # Enter your Facebook email and password
-    email = 'EMAIL'
-    password = 'PASSWORD'
+    email = login.EMAIL
+    password = login.PASSWORD
 
     # Instantiate an object
     fps = Fps(email, password, post_url_text='Full Story')
